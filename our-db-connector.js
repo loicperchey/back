@@ -13,10 +13,10 @@ const fastifyPlugin = require('fastify-plugin')
 async function dbConnector (fastify, options) {
   fastify.register(require('@fastify/mysql'), {
     host: 'localhost',
-    port: 3306,
-    database: 'example',
-    user: 'example',
-    password: 'example',
+    port: 89984,
+    database: 'sauvegarde',
+    user: 'sauvegarde',
+    password: 'sauvegarde',
   })
 }
 
