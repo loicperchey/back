@@ -6,13 +6,17 @@ const fastifyPlugin = require('fastify-plugin')
 
 
 /**
- * Connects to a mysql database
+ * Connects to a MongoDB database
  * @param {FastifyInstance} fastify Encapsulated Fastify Instance
  * @param {Object} options plugin options, refer to https://fastify.dev/docs/latest/Reference/Plugins/#plugin-options
  */
 async function dbConnector (fastify, options) {
   fastify.register(require('@fastify/mysql'), {
-    url: 'mysql://pseudo:motDePasse@localhost/mysql'
+    host: 'localhost',
+    port: 3306,
+    database: 'example',
+    user: 'example',
+    password: 'example',
   })
 }
 
