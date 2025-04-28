@@ -7,7 +7,7 @@ const fastify = require('fastify')({
   })
   
   fastify.register(require('./our-db-connector'))
-  fastify.register(require('./our-first-route'))
+  fastify.register(require('./service/fleshAndBloodCardService'))
   
   fastify.listen({ port: 3000 }, function (err, address) {
     if (err) {
