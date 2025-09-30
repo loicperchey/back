@@ -14,9 +14,9 @@ async function dbConnector (fastify, options) {
   fastify.register(require('@fastify/mysql'), {
     host: 'localhost',
     port: 3306,
-    database: 'personnel',
-    user: 'personnel',
-    password: 'personnel',
+    database: 'deckproject',
+    user: 'dagonlp',
+    password: 'Baragon$2973',
   })
 }
 
