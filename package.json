@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "our-db-connector.js",
   "dependencies": {
+    "@fastify/mysql": "^5.0.2",
+    "@nearform/sql": "^1.10.7",
     "abstract-logging": "^2.0.1",
     "accepts": "^2.0.0",
     "ajv": "^8.17.1",
@@ -143,7 +145,6 @@
     "whatwg-url": "^14.2.0",
     "wrappy": "^1.0.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
